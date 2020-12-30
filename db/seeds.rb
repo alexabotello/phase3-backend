@@ -12,3 +12,4 @@ Ingredient.destroy_all
 banana = Ingredient.create(name: "banana", category: "plant")
 strawberry = Ingredient.create(name: "strawberry", category: "plant")
 blueberry = Ingredient.create(name: "blueberry", category: "plant")
+mango = Ingredient.create(name: "Mango", category: "plant")
