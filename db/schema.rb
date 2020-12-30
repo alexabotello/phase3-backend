@@ -10,11 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_30_221047) do
+ActiveRecord::Schema.define(version: 2020_12_30_233313) do
 
   create_table "ingredients", force: :cascade do |t|
     t.string "name"
     t.string "category"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "image"
+  end
+
+  create_table "smoothie_ingredients", force: :cascade do |t|
+    t.integer "smoothie_id"
+    t.integer "ingredient_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "smoothies", force: :cascade do |t|
+    t.string "name"
+    t.string "username"
+    t.boolean "favorite"
+    t.string "size"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
