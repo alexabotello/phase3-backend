@@ -7,7 +7,7 @@ class SmoothiesController < ApplicationController
 
     def show 
         smoothie = Smoothie.find_by(params[:id])
-        render json: smoothie
+        render json: smoothie.slice(:id, :name, :username, :favorite, :size)
     end
 
     def create 
@@ -15,7 +15,7 @@ class SmoothiesController < ApplicationController
         if smoothie.save
             render json: smoothie
         else
-            render json: {error: "something went wrong. PLease complete all selections"} 
+            render json: {error: "Something went wrong. PLease complete all selections"} 
         end
     end
 

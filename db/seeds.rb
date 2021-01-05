@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# SMOOTHIE SEEDS
+# FAVORITE SMOOTHIE SEEDS
 green_giant = Smoothie.create(name: "Green Giant", username: "user1", favorite: true, size: "Large")
 tropical_sunrise = Smoothie.create(name: "Tropical Sunrise", username: "user1", favorite: true, size: "Large")
 acai_love = Smoothie.create(name: "Acai Love", username: "user1", favorite: true, size: "Large")
