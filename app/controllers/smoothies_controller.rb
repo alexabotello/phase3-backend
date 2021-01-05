@@ -1,2 +1,3 @@
 class SmoothiesController < ApplicationController
+  
 end

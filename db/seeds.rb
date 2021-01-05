@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # SMOOTHIE SEEDS
+Smoothie.destroy_all
+
 green_giant = Smoothie.create(name: "Green Giant", username: "user1", favorite: true, size: "Large")
 tropical_sunrise = Smoothie.create(name: "Tropical Sunrise", username: "user1", favorite: true, size: "Large")
 acai_love = Smoothie.create(name: "Acai Love", username: "user1", favorite: true, size: "Large")
@@ -18,8 +20,8 @@ hangover_cure = Smoothie.create(name: "The Hangover Cure", username: "user1", fa
 # INGREDIENT SEEDS
 Ingredient.destroy_all
 
-banana = Ingredient.create(name: "Banana", category: "plant")
-strawberry = Ingredient.create(name: "Strawberry", category: "plant")
+banana = Ingredient.create(name: "Banana", category: "plant", image: "")
+strawberry = Ingredient.create(name: "Strawberry", category: "plant", image: "")
 blueberry = Ingredient.create(name: "Blueberry", category: "plant", image: "")
 mango = Ingredient.create(name: "Mango", category: "plant", image: "")
 avocado = Ingredient.create(name: "Avocado", category: "plant", image: "")
