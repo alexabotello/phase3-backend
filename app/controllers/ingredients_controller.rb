@@ -1,5 +1,4 @@
 class IngredientsController < ApplicationController
-<<<<<<< HEAD
   
   def index
     ingredients = Ingredient.all
@@ -12,7 +11,6 @@ class IngredientsController < ApplicationController
   else
     render json: { message: 'Ingredient not found' }
   end
-=======
     def index
         ingredients = Ingredient.all
         render json: ingredients
@@ -22,5 +20,4 @@ class IngredientsController < ApplicationController
       ingredient = Ingredient.find_by(id: params[:id])
       render json: ingredient.slice(:id, :name, :category)
     end
->>>>>>> 50b428277c98d3b1da9d58e3d7e21c852bb9aa97
 end

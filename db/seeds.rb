@@ -6,13 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-<<<<<<< HEAD
-# SMOOTHIE SEEDS
-Smoothie.destroy_all
-
-=======
 # FAVORITE SMOOTHIE SEEDS
->>>>>>> 50b428277c98d3b1da9d58e3d7e21c852bb9aa97
 green_giant = Smoothie.create(name: "Green Giant", username: "user1", favorite: true, size: "Large")
 tropical_sunrise = Smoothie.create(name: "Tropical Sunrise", username: "user1", favorite: true, size: "Large")
 acai_love = Smoothie.create(name: "Acai Love", username: "user1", favorite: true, size: "Large")
@@ -24,13 +18,8 @@ hangover_cure = Smoothie.create(name: "The Hangover Cure", username: "user1", fa
 # INGREDIENT SEEDS
 Ingredient.destroy_all
 
-<<<<<<< HEAD
-banana = Ingredient.create(name: "Banana", category: "plant", image: "")
-strawberry = Ingredient.create(name: "Strawberry", category: "plant", image: "")
-=======
 banana = Ingredient.create(name: "Banana", category: "plant")
 strawberry = Ingredient.create(name: "Strawberry", category: "plant")
->>>>>>> 50b428277c98d3b1da9d58e3d7e21c852bb9aa97
 blueberry = Ingredient.create(name: "Blueberry", category: "plant", image: "")
 mango = Ingredient.create(name: "Mango", category: "plant", image: "")
 avocado = Ingredient.create(name: "Avocado", category: "plant", image: "")
