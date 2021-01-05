@@ -3,4 +3,9 @@ class IngredientsController < ApplicationController
         ingredients = Ingredient.all
         render json: ingredients
       end
+
+    def show
+      ingredient = Ingredient.find_by(id: params[:id])
+      render json: ingredient.slice(:id, :name, :category)
+    end
 end
