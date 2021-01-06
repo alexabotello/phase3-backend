@@ -30,7 +30,7 @@ pineapple = Ingredient.create(name: "Pineapple", category: "plant", image: "")
 # papaya = Ingredient.create(name: "Papaya", category: "plant", image: "/images/iconfinder_Papaya_64px.png")
 # image = File.open("#{Rails.root}/public/images/iconfinder_Papaya_64px.png")
 # papaya.photo.attach(io: image, filename: "iconfinder_Papaya_64px.png")
-papaya = Ingredient.create(name: "Papaya", category: "plant", photo: {io: File.open("#{Rails.root}/public/images/iconfinder_Papaya_128px.png"), filename: "iconfinder_Papaya_128px.png"})
+papaya = Ingredient.create(name: "Papaya", category: "plant", photo: {io: File.open("#{Rails.root}/public/images/iconfinder_Papaya_128px.png"), filename: "iconfinder_Papaya_1px.png"})
 ###### BASES #######
 acai = Ingredient.create(name: "Acai", category: "base", image: "")
 coconut_milk = Ingredient.create(name: "Coconut Milk", category: "base", image: "")
