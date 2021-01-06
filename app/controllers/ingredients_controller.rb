@@ -2,7 +2,7 @@ class IngredientsController < ApplicationController
   
     def index
         ingredients = Ingredient.all
-        render json: ingredients, only: [:id, :name, :category, :image]
+        render json: ingredients
       end
 
     def show
