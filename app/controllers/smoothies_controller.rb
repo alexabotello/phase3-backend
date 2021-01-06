@@ -46,5 +46,3 @@ class SmoothiesController < ApplicationController
     
     
     
-    
-end
