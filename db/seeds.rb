@@ -8,11 +8,11 @@
 
 # FAVORITE SMOOTHIE SEEDS
 Smoothie.destroy_all
-green_giant = Smoothie.create(name: "Green Giant", username: "user1", favorite: true, size: "Large")
-tropical_sunrise = Smoothie.create(name: "Tropical Sunrise", username: "user1", favorite: true, size: "Large")
-acai_love = Smoothie.create(name: "Acai Love", username: "user1", favorite: true, size: "Large")
-skin_healer = Smoothie.create(name: "The Skin Healer", username: "user1", favorite: true, size: "Large")
-hangover_cure = Smoothie.create(name: "The Hangover Cure", username: "user1", favorite: true, size: "Large")
+green_giant = Smoothie.create(name: "Green Giant", username: "user1", favorite: true, size: "Large", photo: {io: File.open("#{Rails.root}/public/images/Bowl4.png"), filename: "bowl4.png"})
+tropical_sunrise = Smoothie.create(name: "Tropical Sunrise", username: "user1", favorite: true, size: "Large", photo: {io: File.open("#{Rails.root}/public/images/Bowl2.png"), filename: "bowl2.png"})
+acai_love = Smoothie.create(name: "Acai Love", username: "user1", favorite: true, size: "Large", photo: {io: File.open("#{Rails.root}/public/images/Bowl5.png"), filename: "bowl5.png"})
+skin_healer = Smoothie.create(name: "The Skin Healer", username: "user1", favorite: true, size: "Large", photo: {io: File.open("#{Rails.root}/public/images/Bowl1.png"), filename: "bowl1.png"})
+hangover_cure = Smoothie.create(name: "The Hangover Cure", username: "user1", favorite: true, size: "Large", photo: {io: File.open("#{Rails.root}/public/images/Bowl.png"), filename: "bowl.png"})
 
 
 

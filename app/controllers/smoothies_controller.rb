@@ -5,7 +5,7 @@ class SmoothiesController < ApplicationController
         end
         def show 
             smoothie = Smoothie.find_by(params[:id])
-            render json: smoothie.slice(:id, :name, :username, :favorite, :size)
+            render json: smoothie.slice(:id, :name, :username, :favorite, :size, :image)
         end
         def create 
             smoothie = Smoothie.new(smoothie_params)
@@ -25,7 +25,7 @@ class SmoothiesController < ApplicationController
         # end
         private
         def smoothie_params
-            params.require(:smoothie).permit(:name, :username, :favorite, :size)
+            params.require(:smoothie).permit(:name, :username, :favorite, :size, :image)
         end
     end
     
