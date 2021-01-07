@@ -20,7 +20,7 @@ hangover_cure = Smoothie.create(name: "The Hangover Cure", username: "user1", fa
 Ingredient.destroy_all
 ##### PLANTS ####
 banana = Ingredient.create(name: "Banana", category: "plant", photo: {io: File.open("#{Rails.root}/public/images/bananas.png"), filename: "bananas.png"})
-strawberry = Ingredient.create(name: "Strawberry", category: "plant", photo: {io: File.open("#{Rails.root}/public/images/big-strawberry.png"), filename: "big-strawberry.png"})
+strawberry = Ingredient.create(name: "Strawberry", category: "plant", photo: {io: File.open("#{Rails.root}/public/images/strawberry.png"), filename: "strawberry.png"})
 blueberry = Ingredient.create(name: "Blueberry", category: "plant", photo: {io: File.open("#{Rails.root}/public/images/blueberry.png"), filename: "blueberry.png"})
 mango = Ingredient.create(name: "Mango", category: "plant", photo: {io: File.open("#{Rails.root}/public/images/mango.png"), filename: "mango.png"})
 avocado = Ingredient.create(name: "Avocado", category: "plant", photo: {io: File.open("#{Rails.root}/public/images/avocado.png"), filename: "avocado.png"})
@@ -30,7 +30,7 @@ pineapple = Ingredient.create(name: "Pineapple", category: "plant", photo: {io: 
 # papaya = Ingredient.create(name: "Papaya", category: "plant", image: "/images/iconfinder_Papaya_64px.png")
 # image = File.open("#{Rails.root}/public/images/iconfinder_Papaya_64px.png")
 # papaya.photo.attach(io: image, filename: "iconfinder_Papaya_64px.png")
-papaya = Ingredient.create(name: "Papaya", category: "plant", photo: {io: File.open("#{Rails.root}/public/images/iconfinder_Papaya_128px.png"), filename: "iconfinder_Papaya_128px.png"})
+papaya = Ingredient.create(name: "Papaya", category: "plant", photo: {io: File.open("#{Rails.root}/public/images/iconfinder_Papaya_128px.png"), filename: "iconfinder_Papaya_1px.png"})
 ###### BASES #######
 acai = Ingredient.create(name: "Acai", category: "base", photo: {io: File.open("#{Rails.root}/public/images/acai.png"), filename: "acai.png"})
 coconut_milk = Ingredient.create(name: "Coconut Milk", category: "base", photo: {io: File.open("#{Rails.root}/public/images/coconut-drink.png"), filename: "coconut-drink.png"})
